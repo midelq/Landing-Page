@@ -1,4 +1,5 @@
 import Header from "./components/layout/Header";
+import Hero from "./components/sections/Hero";
 
 function App() {
   return (
@@ -6,10 +7,7 @@ function App() {
       <Header />
 
       <main>
-        {/* Hero Section - placeholder */}
-        <section id="home" className="min-h-screen flex items-center justify-center pt-20">
-          <h1 className="text-4xl font-bold">Hero Section</h1>
-        </section>
+        <Hero />
 
         {/* Projects Section - placeholder */}
         <section id="projects" className="py-20">
