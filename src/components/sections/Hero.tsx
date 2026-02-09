@@ -9,23 +9,19 @@ export default function Hero() {
             className="min-h-screen flex items-center justify-center pt-20"
         >
             <div className="max-w-2xl mx-auto px-6 text-center">
-                {/* Avatar with gradient border */}
-                <div className="w-36 h-36 mx-auto mb-8 rounded-full p-1 bg-gradient-to-br from-orange-500 via-pink-500 to-purple-500">
-                    <div className="w-full h-full rounded-full bg-[#1a1a1a] flex items-center justify-center overflow-hidden">
-                        {/* Placeholder - replace with your avatar */}
-                        <img
-                            src="/avatar.png"
-                            alt={personalInfo.name}
-                            className="w-full h-full object-cover"
-                            onError={(e) => {
-                                // Fallback if image doesn't exist
-                                e.currentTarget.style.display = "none";
-                                e.currentTarget.parentElement!.innerHTML = `
-                  <span class="text-4xl">👨‍💻</span>
+                {/* Avatar */}
+                <div className="w-44 h-44 mx-auto mb-8 rounded-full overflow-hidden">
+                    <img
+                        src="/avatar.png"
+                        alt={personalInfo.name}
+                        className="w-full h-full object-cover"
+                        onError={(e) => {
+                            e.currentTarget.style.display = "none";
+                            e.currentTarget.parentElement!.innerHTML = `
+                  <span class="text-6xl flex items-center justify-center h-full bg-[#1a1a1a]">👨‍💻</span>
                 `;
-                            }}
-                        />
-                    </div>
+                        }}
+                    />
                 </div>
 
                 {/* Title */}
