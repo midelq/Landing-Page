@@ -4,7 +4,7 @@ export interface Project {
     subtitle: string;
     description: string;
     techStack: string[];
-    image: string;
+    images: string[];
     link: string;
 }
 
@@ -26,7 +26,34 @@ export const projects: Project[] = [
             "JWT",
             "Zod",
         ],
-        image: "/projects/trello-clone.png",
+        images: [
+            "/projects/trello-clone/trello-clone.png",
+            "/projects/trello-clone/trello-clone-2.png",
+            "/projects/trello-clone/trello-clone-3.png",
+            "/projects/trello-clone/trello-clone-4.png",
+        ],
         link: "https://trello-clone-fe-nine.vercel.app/",
+    },
+    {
+        id: 2,
+        title: "Med-Corp Reporting System",
+        subtitle: "MEDICAL REPORTING PLATFORM",
+        description:
+            "A monorepo-based medical reporting system with role-based access control. Enables report creation, assignment, and management with certificate generation.",
+        techStack: [
+            "React",
+            "TypeScript",
+            "AdonisJS",
+            "PostgreSQL",
+            "Docker",
+            "Vite",
+            "pnpm",
+        ],
+        images: [
+            "/projects/med-corp-1.png",
+            "/projects/med-corp-2.png",
+            "/projects/med-corp-3.png",
+        ],
+        link: "https://front-production-6a0e.up.railway.app/users",
     },
 ];
