@@ -56,7 +56,7 @@ export default function Hero() {
                         {techStack.map((tech) => (
                             <div
                                 key={tech.name}
-                                className="opacity-80 hover:opacity-100 transition-opacity cursor-pointer"
+                                className="w-8 h-8 opacity-80 hover:opacity-100 transition-opacity cursor-pointer"
                                 title={tech.name}
                             >
                                 {TechIcons[tech.icon as TechIconName]}

@@ -15,11 +15,11 @@ export const personalInfo = {
 } as const;
 
 export const techStack = [
-    { name: "JavaScript", icon: "javascript" },
-    { name: "Next.js", icon: "nextjs" },
-    { name: "HTML5", icon: "html5" },
-    { name: "CSS3", icon: "css3" },
+    { name: "TypeScript", icon: "typescript" },
     { name: "React", icon: "react" },
+    { name: "Node.js", icon: "nodejs" },
+    { name: "PostgreSQL", icon: "postgresql" },
+    { name: "Docker", icon: "docker" },
 ] as const;
 
 export type TechItem = (typeof techStack)[number];
