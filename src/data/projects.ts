@@ -6,6 +6,7 @@ export interface Project {
     techStack: string[];
     images: string[];
     link: string;
+    githubUrls?: { label: string; url: string }[];
 }
 
 export const projects: Project[] = [
@@ -14,7 +15,7 @@ export const projects: Project[] = [
         title: "Trello Clone",
         subtitle: "FULL-STACK TASK MANAGEMENT APP",
         description:
-            "A modern task management application with drag-and-drop functionality, authentication, and real-time updates. Built with React frontend and Node.js/Express backend.",
+            "A modern task management app with a fully functional backend and database. Supports real-time updates for users, boards, lists, and cards.",
         techStack: [
             "React",
             "TypeScript",
@@ -33,6 +34,10 @@ export const projects: Project[] = [
             "/projects/trello-clone/trello-clone-4.png",
         ],
         link: "https://trello-clone-fe-nine.vercel.app/",
+        githubUrls: [
+            { label: "Frontend", url: "https://github.com/midelq/Trello-clone-FE" },
+            { label: "Backend", url: "https://github.com/midelq/Trello-clone-BE" },
+        ],
     },
     {
         id: 2,
@@ -57,5 +62,6 @@ export const projects: Project[] = [
             "/projects/med-corp/med-corp-5.png",
         ],
         link: "https://front-production-6a0e.up.railway.app/users",
+        githubUrls: [],
     },
 ];
