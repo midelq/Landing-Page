@@ -1,6 +1,5 @@
 import Button from "../ui/Button";
-import { TechIcons, type TechIconName } from "../ui/TechIcons";
-import { personalInfo, techStack } from "../../data/personal";
+import { personalInfo } from "../../data/personal";
 
 export default function Hero() {
     return (
@@ -47,23 +46,7 @@ export default function Hero() {
                     </Button>
                 </div>
 
-                {/* Tech Stack */}
-                <div>
-                    <p className="text-xs uppercase tracking-widest text-gray-500 mb-4">
-                        Experience With
-                    </p>
-                    <div className="flex justify-center gap-6">
-                        {techStack.map((tech) => (
-                            <div
-                                key={tech.name}
-                                className="w-8 h-8 opacity-80 hover:opacity-100 transition-opacity cursor-pointer"
-                                title={tech.name}
-                            >
-                                {TechIcons[tech.icon as TechIconName]}
-                            </div>
-                        ))}
-                    </div>
-                </div>
+
             </div>
         </section>
     );
