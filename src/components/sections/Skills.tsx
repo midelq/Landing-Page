@@ -16,7 +16,7 @@ const skillCategories: SkillCategory[] = [
             { name: "TypeScript", icon: "typescript" },
             { name: "React", icon: "react" },
             { name: "Node.js", icon: "nodejs" },
-            { name: "AdonisJS" },
+            { name: "AdonisJS", icon: "adonis" },
         ],
     },
     {
@@ -26,23 +26,23 @@ const skillCategories: SkillCategory[] = [
             { name: "CSS3", icon: "css3" },
             { name: "Tailwind CSS", icon: "tailwindcss" },
             { name: "Material UI" },
-            { name: "Next.js", icon: "nextjs" },
+
         ]
     },
     {
         name: "Back-end & Databases",
         items: [
             { name: "PostgreSQL", icon: "postgresql" },
-            { name: "MySQL" },
+            { name: "MySQL", icon: "mysql" },
             { name: "MongoDB" },
-            { name: "Drizzle ORM" },
+            { name: "Drizzle ORM", icon: "drizzle" },
             { name: "Lucid" },
         ],
     },
     {
         name: "Testing",
         items: [
-            { name: "Playwright (E2E)" },
+            { name: "Playwright (E2E)", icon: "playwright" },
             { name: "Japa" },
             { name: "Integration Testing" },
         ],
@@ -58,9 +58,9 @@ const skillCategories: SkillCategory[] = [
         name: "Tooling & Infra",
         items: [
             { name: "Git" },
-            { name: "GitHub" },
+            { name: "GitHub", icon: "github" },
             { name: "ESLint" },
-            { name: "Prettier" },
+            { name: "Prettier", icon: "prettier" },
         ],
     },
 ];

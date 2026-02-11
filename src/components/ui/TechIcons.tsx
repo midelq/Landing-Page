@@ -37,10 +37,25 @@ export const TechIcons = {
         </svg>
     ),
     postgresql: (
-        <svg viewBox="0 0 24 24" className="w-full h-full" fill="#336791">
-            <path d="M12 .024c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6.33 13.56c-.525 1.755-1.215 3.03-3.075 4.545-2.025 1.635-4.59 1.8-6.96 1.05-2.445-.765-4.14-3.135-3.48-6.195.42-1.995 2.19-4.17 3.525-5.325.3-.255.48-.36.93-.57 2.19 1.95 2.19 2.055 2.505 3.06.18.57.195.555.27.42.54-1.005.99-1.35 1.575-1.2 1.41.345 2.22 1.935 3.075 2.655.84.705 2.07 1.29 1.635 1.56z" />
-            <path d="M11.956 12.024c-.166-.316-.271-.472-.616-1.096-.15-.27-.27-.472-.27-.45 0 .022-1.26 2.453-2.61 4.59.885.54 1.92.705 3.105.705 1.005 0 1.83-.165 2.445-.42-.03-.045-2.055-3.329-2.055-3.329z" fill="#FFF" />
-        </svg>
+        <img src="/tech-icons/postgres.png" alt="PostgreSQL" className="w-full h-full object-contain" />
+    ),
+    mysql: (
+        <img src="/tech-icons/mysql.png" alt="MySQL" className="w-full h-full object-contain" />
+    ),
+    github: (
+        <img src="/tech-icons/github.png" alt="GitHub" className="w-full h-full object-contain" />
+    ),
+    adonis: (
+        <img src="/tech-icons/adonis.png" alt="AdonisJS" className="w-full h-full object-contain" />
+    ),
+    drizzle: (
+        <img src="/tech-icons/drizzle.webp" alt="Drizzle ORM" className="w-full h-full object-contain" />
+    ),
+    playwright: (
+        <img src="/tech-icons/playwright.png" alt="Playwright" className="w-full h-full object-contain" />
+    ),
+    prettier: (
+        <img src="/tech-icons/prettier.png" alt="Prettier" className="w-full h-full object-contain" />
     ),
     docker: (
         <svg viewBox="0 0 24 24" className="w-full h-full" fill="#2496ED">
