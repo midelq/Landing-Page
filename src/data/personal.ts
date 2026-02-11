@@ -4,8 +4,14 @@ export const personalInfo = {
     titleHighlight: "about it!",
     description:
         "I am a seasoned full-stack software engineer with over 8 years of professional experience, specializing in backend development. My expertise lies in crafting robust and scalable SaaS-based architectures on the Amazon AWS platform.",
-    email: "abmcodehub@gmail.com",
+    email: "pryst.oresta@gmail.com",
     cv: "/cv.pdf",
+    socials: {
+        github: "https://github.com/midelq",
+        linkedin: "https://linkedin.com/in/yourprofile", // Placeholder if you have one
+        twitter: "https://x.com/midelqh",
+        telegram: "https://t.me/midelq",
+    },
 } as const;
 
 export const techStack = [

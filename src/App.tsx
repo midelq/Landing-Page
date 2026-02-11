@@ -2,6 +2,7 @@ import Header from "./components/layout/Header";
 import Hero from "./components/sections/Hero";
 import Projects from "./components/sections/Projects";
 import Experience from "./components/sections/Experience";
+import Contact from "./components/sections/Contact";
 
 function App() {
   return (
@@ -15,10 +16,7 @@ function App() {
 
         <Experience />
 
-        {/* Contact Section - placeholder */}
-        <section id="contact" className="py-20">
-          <h2 className="text-2xl font-bold text-center">Contact</h2>
-        </section>
+        <Contact />
       </main>
     </div>
   );
