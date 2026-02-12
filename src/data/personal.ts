@@ -1,9 +1,9 @@
 export const personalInfo = {
-    name: "John Doe",
-    title: "I do code and make content",
-    titleHighlight: "about it!",
+    name: "Orest Prystaiko",
+    title: "Building modern web applications",
+    titleHighlight: "& learning",
     description:
-        "I am a seasoned full-stack software engineer with over 8 years of professional experience, specializing in backend development. My expertise lies in crafting robust and scalable SaaS-based architectures on the Amazon AWS platform.",
+        "I'm a 19-year-old Junior Full-Stack Developer from Lviv, Ukraine, passionate about creating robust software. I build scalable apps with React, Node.js, and modern databases. Always learning, improving, and sharing my journey along the way.",
     email: "pryst.oresta@gmail.com",
     cv: "/cv.pdf",
     socials: {
