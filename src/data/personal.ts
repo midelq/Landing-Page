@@ -3,7 +3,7 @@ export const personalInfo = {
     title: "Building modern web applications",
     titleHighlight: "& learning",
     description:
-        "I'm a 19-year-old Junior Full-Stack Developer from Lviv, Ukraine, passionate about creating robust software. I build scalable apps with React, Node.js, and modern databases. Always learning, improving, and sharing my journey along the way.",
+        "I'm Orest Prystaiko, a 19-year-old Junior Full-Stack Developer from Lviv, Ukraine, passionate about creating robust software. I build scalable apps with React, Node.js, and modern databases. Always learning, improving, and sharing my journey along the way.",
     email: "pryst.oresta@gmail.com",
     cv: "/cv.pdf",
     socials: {
