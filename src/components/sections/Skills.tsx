@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import { TechIcons, type TechIconName } from "../ui/TechIcons";
 
 interface SkillCategory {
@@ -7,6 +8,27 @@ interface SkillCategory {
         icon?: TechIconName;
     }[];
 }
+
+const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+        opacity: 1,
+        transition: {
+            staggerChildren: 0.1
+        }
+    }
+};
+
+const itemVariants = {
+    hidden: { opacity: 0, y: 20 },
+    visible: {
+        opacity: 1,
+        y: 0,
+        transition: {
+            duration: 0.5
+        }
+    }
+};
 
 const skillCategories: SkillCategory[] = [
     {
@@ -67,13 +89,30 @@ export default function Skills() {
     return (
         <section id="skills" className="py-10 relative overflow-hidden bg-[#0a0a0a]">
             <div className="max-w-6xl mx-auto px-6 relative">
-                <h2 className="text-2xl font-bold text-center mb-8 md:mb-12 bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 bg-clip-text text-transparent uppercase tracking-wider">
+                <motion.h2
+                    initial={{ opacity: 0, y: -20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.5 }}
+                    className="text-2xl font-bold text-center mb-8 md:mb-12 bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 bg-clip-text text-transparent uppercase tracking-wider"
+                >
                     Skills & Technologies
-                </h2>
+                </motion.h2>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <motion.div
+                    variants={containerVariants}
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{ once: true, margin: "-100px" }}
+                    className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
+                >
                     {skillCategories.map((category) => (
-                        <div key={category.name} className="bg-[#161616] border border-white/5 rounded-2xl p-6 hover:border-white/10 transition-colors">
+                        <motion.div
+                            key={category.name}
+                            variants={itemVariants}
+                            whileHover={{ scale: 1.02 }}
+                            className="bg-[#161616] border border-white/5 rounded-2xl p-6 hover:border-white/10 transition-colors"
+                        >
                             <h3 className="text-xl font-bold text-white mb-6 bg-gradient-to-r from-white to-gray-400 bg-clip-text text-transparent">
                                 {category.name}
                             </h3>
@@ -101,9 +140,9 @@ export default function Skills() {
                                     </div>
                                 ))}
                             </div>
-                        </div>
+                        </motion.div>
                     ))}
-                </div>
+                </motion.div>
             </div>
         </section>
     );
