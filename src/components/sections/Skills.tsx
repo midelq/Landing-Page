@@ -20,21 +20,11 @@ const skillCategories: SkillCategory[] = [
         ],
     },
     {
-        name: "Front-end",
-        items: [
-            { name: "HTML5", icon: "html5" },
-            { name: "CSS3", icon: "css3" },
-            { name: "Tailwind CSS", icon: "tailwindcss" },
-            { name: "Material UI" },
-
-        ]
-    },
-    {
         name: "Back-end & Databases",
         items: [
             { name: "PostgreSQL", icon: "postgresql" },
             { name: "MySQL", icon: "mysql" },
-            { name: "MongoDB" },
+
             { name: "Drizzle ORM", icon: "drizzle" },
             { name: "Lucid" },
         ],
@@ -44,7 +34,7 @@ const skillCategories: SkillCategory[] = [
         items: [
             { name: "Playwright (E2E)", icon: "playwright" },
             { name: "Japa" },
-            { name: "Integration Testing" },
+            { name: "Feature & Integration Testing" },
         ],
     },
     {
@@ -55,11 +45,19 @@ const skillCategories: SkillCategory[] = [
         ],
     },
     {
+        name: "Styling",
+        items: [
+            { name: "CSS3", icon: "css3" },
+            { name: "Tailwind CSS", icon: "tailwindcss" },
+            { name: "Material UI" },
+        ],
+    },
+    {
         name: "Tooling & Infra",
         items: [
-            { name: "Git" },
+
             { name: "GitHub", icon: "github" },
-            { name: "ESLint" },
+
             { name: "Prettier", icon: "prettier" },
         ],
     },

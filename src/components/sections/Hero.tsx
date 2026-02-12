@@ -1,4 +1,4 @@
-import Button from "../ui/Button";
+
 import { personalInfo } from "../../data/personal";
 
 export default function Hero() {
@@ -36,15 +36,7 @@ export default function Hero() {
                     {personalInfo.description}
                 </p>
 
-                {/* CTA Buttons */}
-                <div className="flex justify-center gap-4 mb-12">
-                    <Button variant="outline" href="#contact">
-                        Get In Touch
-                    </Button>
-                    <Button variant="primary" href={personalInfo.cv}>
-                        Download CV
-                    </Button>
-                </div>
+
 
 
             </div>
