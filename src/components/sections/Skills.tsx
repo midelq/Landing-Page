@@ -65,9 +65,9 @@ const skillCategories: SkillCategory[] = [
 
 export default function Skills() {
     return (
-        <section id="skills" className="py-20 relative overflow-hidden bg-[#0a0a0a]">
+        <section id="skills" className="py-10 relative overflow-hidden bg-[#0a0a0a]">
             <div className="max-w-6xl mx-auto px-6 relative">
-                <h2 className="text-2xl font-bold text-center mb-16 bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 bg-clip-text text-transparent uppercase tracking-wider">
+                <h2 className="text-2xl font-bold text-center mb-8 md:mb-12 bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 bg-clip-text text-transparent uppercase tracking-wider">
                     Skills & Technologies
                 </h2>
 

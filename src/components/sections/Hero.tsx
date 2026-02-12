@@ -5,7 +5,7 @@ export default function Hero() {
     return (
         <section
             id="home"
-            className="min-h-screen flex items-center justify-center pt-20"
+            className="pt-20 pb-10 md:pt-32 md:pb-16 relative"
         >
             <div className="max-w-2xl mx-auto px-6 text-center">
                 {/* Avatar */}
