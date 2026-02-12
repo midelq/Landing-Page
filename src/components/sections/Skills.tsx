@@ -77,9 +77,7 @@ const skillCategories: SkillCategory[] = [
     {
         name: "Tooling & Infra",
         items: [
-
             { name: "GitHub", icon: "github" },
-
             { name: "Prettier", icon: "prettier" },
         ],
     },
