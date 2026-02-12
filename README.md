@@ -1,5 +1,7 @@
 # Orest Prystaiko - Portfolio
 
+[![Live Demo](https://img.shields.io/badge/demo-online-green.svg)](https://landing-page-sooty-delta-31.vercel.app/)
+
 A modern, responsive portfolio website built with **React**, **TypeScript**, and **Tailwind CSS**. Designed to showcase my skills, projects, and experience as a Full-Stack Developer.
 
 ## 🚀 Features
